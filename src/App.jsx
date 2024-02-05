@@ -9,13 +9,15 @@ import ColorList from "./ColorList";
 import ShopList from "./ShopList";
 import ShopListItem from "./ShopListItem";
 
-const data = [
- { id: 1, name: "eggs", quantity: 12, status: false },
- { id: 2, name: "milk", quantity: 7, status: true },
- { id: 3, name: "cookies", quantity: 4, status: false },
- { id: 4, name: "apples", quantity: 10, status: true },
- { id: 5, name: "oranges", quantity: 20, status: false },
-];
+
+const data=[
+  {id:1, name:"eggs", quantity: 12, status: false},
+  {id:2, name:"milk", quantity: 7, status: true},
+  {id:3, name:"cookies", quantity: 4, status: false},
+  {id:4, name:"apples", quantity: 10, status: true},
+  {id:5, name:"pineapples", quantity: 7, status: true},
+  {id:6, name:"kiwi", quantity: 12, status: true},
+]
 
 function App() {
  return (
