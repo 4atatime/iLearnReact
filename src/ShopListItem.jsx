@@ -1,11 +1,11 @@
-export default function ShopListItem({name, quantity, status}){
+export default function ShopListItem({item}){
   const styles={
-    color: i.status ? "grey" : "black", 
-    textDecoration: i.status ? "line-through" : "none",
+    color: item.status ? "grey" : "black", 
+    textDecoration: item.status ? "line-through" : "none",
   };
   return(
       <li style={styles}>
-        {name}: {quantity} {i.status===false && <p>- get it!</p>}
+        {item.name}: {item.quantity} {item.status===false && <p>- get it!</p>}
       </li>
   );
 }

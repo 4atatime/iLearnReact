@@ -3,12 +3,10 @@ import ShopListItem from "./ShopListItem";
 export default function ShopList({items}){
     return(
         <ul>
-            {items.map((i) => (
+            {items.map((item) => (
                 <ShopListItem 
-                    key={i.id}
-                    name={i.name}
-                    quantity={i.quantity}
-                    status={i.status}
+                    key={item.id}
+                    item={item}
                 />
             ))}
         </ul>
